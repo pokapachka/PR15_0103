@@ -1,5 +1,7 @@
 package com.example.pr15_0103;
 
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,6 +11,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private MediaRecorder mediaRecorder;
+    private MediaPlayer mediaPlayer;
+    private String fileName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
